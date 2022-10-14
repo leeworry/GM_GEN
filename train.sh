@@ -1,0 +1,4 @@
+python train_demo.py --trainN 5 --N 5 --K 1 --Q 1 --pretrain_ckpt ../Bert4SemiRE/bert/BERT-BASE-UNCASED --cat_entity_rep --model gm_gen --dot
+python train_demo.py --trainN 5 --N 5 --K 5 --Q 1 --pretrain_ckpt ../Bert4SemiRE/bert/BERT-BASE-UNCASED --cat_entity_rep --model gm_gen
+python train_demo.py --trainN 5 --N 5 --K 5 --Q 1 --pretrain_ckpt ../Bert4SemiRE/bert/BERT-BASE-UNCASED --cat_entity_rep --model gm_gen --test_online --load_ckpt ./checkpoint/gm_gen-bert-train_wiki-val_wiki-5-1-dot-catentity.pth.tar --test_params --only_test
+python train_demo.py --trainN 5 --N 5 --K 5 --Q 1 --pretrain_ckpt ../Bert4SemiRE/bert/BERT-BASE-UNCASED --cat_entity_rep --model gm_gen --test_online --load_ckpt ./checkpoint/gm_gen-bert-train_wiki-val_wiki-5-5-catentity.pth.tar --test_online --only_test
